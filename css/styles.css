@@ -1,4 +1,4 @@
-body{
+body,.contactbody{
     background-color: bisque;
 }
 h1{
@@ -7,6 +7,23 @@ h1{
 }
 p{font-family: 'Courier New', Courier, monospace;
 font-size: medium;}
-image {
+.image {
     display: inline-block;
   }
+  @media (max-width :600px) {
+    body {
+        background-color: lightblue;
+      }
+    h1,p{text-align:center;
+    color: blue;}
+.image{display: none;}
+
+.contactbody{background-color: aqua;}
+   
+  }
+  @media only screen and (orientation: landscape) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  
